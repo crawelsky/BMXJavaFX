@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainPane" alignment="TOP_LEFT" prefHeight="400.0" prefWidth="561.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launcher.MainController">
+    <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openFileChooser" text="Ouvrir image" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitClick" text="Fermer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" text="A propos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="561.0">
+            <children>
+                <HBox fx:id="hBox1" prefHeight="54.0" prefWidth="291.0" style="-fx-background-color: green;">
+                    <children>
+                        <ImageView fitHeight="60.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label prefHeight="64.0" prefWidth="202.0" text="BMX Panel" textFill="WHITE">
+                            <font>
+                                <Font size="31.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="61.0" prefWidth="346.0">
+                     <children>
+                            <Label fx:id="info" alignment="TOP_LEFT" prefHeight="75.0" prefWidth="343.0" text="Label" textAlignment="JUSTIFY" />
+                        <HBox prefHeight="33.0" prefWidth="346.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="chute_button" mnemonicParsing="false" onAction="#chuteClick" text="CHUTE" />
+                              <Button fx:id="start_button" mnemonicParsing="false" onAction="#startClick" text="START" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ListView fx:id="listConnecter" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+                <HBox prefHeight="45.0" prefWidth="291.0" spacing="15.0">
+                    <children>
+                          <TextField fx:id="numeroCourse" />
+                          <TextField fx:id="numeroManche" />
+                          <Button mnemonicParsing="false" onAction="#sendNumeroClick" text="Affichage" />
+                    </children>
+                </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="41.0" prefWidth="540.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="texte" prefHeight="25.0" prefWidth="315.0" />
+                  <Button mnemonicParsing="false" onAction="#sendTexteClick" text="Affichage" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <ScrollPane prefHeight="123.0" prefWidth="540.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="95.0" prefWidth="524.0">
+                     <children>
+                        <HBox fx:id="imageList" prefHeight="95.0" prefWidth="524.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#openFileChooser" prefHeight="150.0" prefWidth="97.0" style="-fx-background-radius: 40;" text="+" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <HBox prefHeight="23.0" prefWidth="540.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="475.0" text="Logiciel réaliser par le fablab de l'université de Brest @Djadja" />
+               </children>
+            </HBox>
+            </children>
+         <StackPane.margin>
+            <Insets top="25.0" />
+         </StackPane.margin>
+         <padding>
+            <Insets bottom="1.0" left="5.0" />
+         </padding>
+        </VBox>
+    </children>
+</StackPane>
