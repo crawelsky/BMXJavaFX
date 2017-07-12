@@ -1,24 +1,18 @@
 package Launcher;
 
-import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
+import javafx.scene.paint.Color;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
  * Created by Jean Delest on 24/06/2017.
  */
-public class LoginController implements Initializable {
+public class LoginController implements Initializable{
     /* Variables d'usages */
     static private String log;
     static private String pass;
@@ -27,18 +21,32 @@ public class LoginController implements Initializable {
     /* Autres */
     @FXML private TextField login;
     @FXML private TextField pwd;
+    @FXML private TextField ssidText;
+    @FXML private TextField ssidpwdText;
+    @FXML private Label info;
 
     @FXML private void sendClick(){
-        if(!login.getText().toString().isEmpty() || !pwd.getText().toString().isEmpty()){
+        if(!login.getText().toString().isEmpty() && !pwd.getText().toString().isEmpty() &&
+                !ssidText.getText().toString().isEmpty() && !ssidpwdText.getText().toString().isEmpty()){
             log = login.getText().toString();
             pass = pwd.getText().toString();
+            ssid = ssidText.getText().toString();
+            wifipwd = ssidpwdText.getText().toString();
+            //Hostpost.start(ssid, wifipwd);
             Main.changeStage();
+        }else{
+            info.setText("Informations incorrectes !");
         }
     }
 
+
+
     @Override public void initialize(URL location, ResourceBundle resources) {
+        info.setTextFill(Color.FIREBRICK);
         login.setText("log");
         pwd.setText("pwd");
+        ssidText.setText("BMX");
+        ssidpwdText.setText("BMXCourse2017");
     }
 
     public static String getLog() {

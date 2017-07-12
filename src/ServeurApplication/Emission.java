@@ -6,13 +6,14 @@ package ServeurApplication;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.Socket;
+import java.net.*;
+import java.util.Enumeration;
 import java.util.Map;
 
 
 public class Emission implements Runnable {
 
-    private static String message = null;
+    private String message = null;
 
     public Emission(String msg) {
         message = msg;

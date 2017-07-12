@@ -1,8 +1,11 @@
 package ServeurApplication;
 
 import java.io.IOException;
-import java.net.*;
-import java.util.*;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by didi on 22/06/17.
@@ -20,7 +23,6 @@ public class ServeurApplication {
             server = new ServerSocket(5030);
             System.out.println("Le serveur a demarré sur le port :  " + server.getLocalPort());
             state = true;
-            //firstBroadcast();
             threadConnexion = new Thread(new ConnexionOk(server));
             threadConnexion.setDaemon(true);
             threadConnexion.start();
@@ -29,67 +31,41 @@ public class ServeurApplication {
         }
     }
 
-    public boolean firstBroadcast() {
-        try {
-            InterfaceAddress ia = null;
-            String data = "serveurApplication";
-            DatagramSocket socket = new DatagramSocket();
-            socket.setBroadcast(true);
-            int i = 0;
-            Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();
-            while (en.hasMoreElements()) {
-                NetworkInterface ni = en.nextElement();
-                List<InterfaceAddress> list = ni.getInterfaceAddresses();
-                Iterator<InterfaceAddress> it = list.iterator();
-                while (it.hasNext()) {
-                    ia = it.next();
-                    if(ia.getBroadcast() != null && i < 2){ i++; break; }
-                }
-
-                if(i == 2) break;
+    public static boolean clientExist(String clt){
+        boolean result = false;
+        for (Map.Entry<Socket, String> s : getListClient().entrySet()) {
+            if(s.getValue().equals(clt)){
+                result = true; break;
             }
-            System.out.println(" Broadcast = " + ia.getBroadcast());
-            InetAddress broadcastAddress = ia.getBroadcast();
-            DatagramPacket packet = new DatagramPacket(data.getBytes(), data.getBytes().length, broadcastAddress, 5030);
-            socket.send(packet);
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
         }
+        return result;
     }
 
+    public static boolean removeClient(String clt){
+        boolean result = false;
+        for (Map.Entry<Socket, String> s : getListClient().entrySet()) {
+            if(s.getValue().equals(clt)){
+                listClient.remove(s.getKey(), s.getValue());
+                return true;
+            }
+        }
+        return result;
+    }
     /* Getters and Setters */
 
     public static Map<Socket, String> getListClient() {
         return listClient;
     }
 
-    public static void setListClient(Map<Socket, String> listClient) {
-        ServeurApplication.listClient = listClient;
-    }
-
     public static ServerSocket getServer() {
         return server;
-    }
-
-    public static void setServer(ServerSocket server) {
-        ServeurApplication.server = server;
     }
 
     public static boolean isState() {
         return state;
     }
 
-    public static void setState(boolean state) {
-        ServeurApplication.state = state;
-    }
-
     public static Thread getThreadConnexion() {
         return threadConnexion;
-    }
-
-    public static void setThreadConnexion(Thread threadConnexion) {
-        ServeurApplication.threadConnexion = threadConnexion;
     }
 }

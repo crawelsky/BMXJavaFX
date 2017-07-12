@@ -4,7 +4,6 @@ package ServeurApplication;
  * Created by didi on 22/06/17.
  */
 
-import Launcher.LoginController;
 import Launcher.Main;
 import Launcher.MainController;
 import javafx.application.Platform;
@@ -17,12 +16,12 @@ import java.net.Socket;
 public class Reception implements Runnable {
     private Socket socket;
     private BufferedReader in;
-    private String message = null, login = null;
+    private String message = null, id = null;
     private boolean stopClient = false;
 
-    public Reception(Socket socket, BufferedReader in, String login){
+    public Reception(Socket socket, BufferedReader in, String id){
         this.in = in;
-        this.login = login;
+        this.id = id;
         this.socket = socket;
     }
 
@@ -34,17 +33,19 @@ public class Reception implements Runnable {
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        MainController.handleMessage(socket, login, message);
+                        MainController.handleMessage(socket, id, message);
                     }
                 });
             } catch (Exception e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
         }
         try{
             socket.close();
         }catch (IOException e){
             e.printStackTrace();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
         }
     }
 }

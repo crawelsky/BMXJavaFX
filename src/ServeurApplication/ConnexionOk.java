@@ -4,9 +4,6 @@ package ServeurApplication;
  * Created by didi on 22/06/17.
  */
 
-import Launcher.LoginController;
-import Launcher.Main;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
