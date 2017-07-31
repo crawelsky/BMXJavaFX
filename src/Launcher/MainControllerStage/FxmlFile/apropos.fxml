@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="729.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launcher.MainControllerStage.AproposController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <bottom>
+            <HBox prefHeight="54.0" prefWidth="580.0" spacing="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="auteur" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #689f38;" text="Auteur" textFill="WHITE" />
+                  <Button fx:id="licence" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #689f38;" text="Licence" textFill="WHITE" />
+                  <Button fx:id="fermer" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #689f38;" text="Fermer" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <left>
+            <ImageView fitHeight="380.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/icon.png" />
+               </image>
+            </ImageView>
+         </left>
+         <center>
+            <VBox fx:id="vBox" prefHeight="380.0" prefWidth="331.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="506.0" text="BMX Panel" textAlignment="CENTER" textFill="#689f38">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="info" prefHeight="283.0" prefWidth="511.0" text="Ce logiciel à été développé à partir de la librairie JAVAFX" textAlignment="CENTER" textFill="#689f38" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,6 +1,8 @@
 package Launcher;
 
+import Launcher.Utilitaire.Property;
 import ServeurApplication.Emission;
+import ServeurApplication.MVController;
 import ServeurApplication.ServeurApplication;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
@@ -13,10 +15,14 @@ import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -24,9 +30,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.Socket;
@@ -34,50 +43,54 @@ import java.net.URL;
 import java.util.*;
 import java.util.List;
 
+/**
+* Created by Jean Delest on 24/06/2017.
+* @author DJADJA D. Jean Delest - jeanlemirates@gmail.com
+* @version 1.0
+ *
+ * Fenêtre principal appélée après le login
+*/
+
 public class MainController implements Initializable, EventHandler<MouseEvent> {
 
+    private final static String AIDE_FXML = "MainControllerStage/FxmlFile/aide.fxml";
+    private final static String APROPOS_FXML = "MainControllerStage/FxmlFile/apropos.fxml";
+    private final String code = Main.LOG + "-" + Main.PASS + "-" + Main.getWifiAdresse().toString().substring(1);
     private final Map<ImageView, String> fileIndex = new HashMap<>();// Pas ordonner
     private List<String> fileOrder = new ArrayList<String>();
     private String currentKey = null;
     private boolean isSupressing;
-    public static final String CHUTE = "CHUTE";
-    public static final String START = "START";
+    public static final String CHUTE = Property.getProperty("CHUTE");
+    public static final String START = Property.getProperty("START");
+    public static final String ADMIN_ID = Property.getProperty("ADMIN_ID");
 
+    /* Stages */
+    public static Stage aideStage;
+    public static Stage aproposStage;
     /* Les layouts */
     @FXML private ListView<String> listConnecter;
     @FXML private HBox imageList;
-    @FXML public Label info;
-    @FXML public TextField numeroManche;
-    @FXML public TextField numeroCourse;
-    @FXML public TextField texte;
-    @FXML public Button start_button;
-    @FXML public Button chute_button;
-    @FXML public VBox rVbox;
+    @FXML private Label info;
+    @FXML private TextField numeroManche;
+    @FXML private TextField numeroCourse;
+    @FXML private TextField texte;
+    @FXML private Button start_button;
+    @FXML private Button chute_button;
+    @FXML private Button course_button;
+    @FXML private Button texte_button;
+    @FXML private VBox rVbox;
+    @FXML private CheckBox maskQrCode;
+    @FXML private ComboBox<Couleur> comboBox1;
+    private ImageView qrView;
     public static Label messageAfficher;
+    /* Clients */
+    private static Map<Socket, String> listClient = new HashMap<>();
     public static final ObservableList data = FXCollections.observableArrayList();
 
+    public enum Couleur {
+        MUTIPLE, ROUGE, BLEU, JAUNE, VERT
+    }
     /* Methodes FXML */
-    @FXML public void sendNumeroClick(){
-        if(!numeroCourse.getText().isEmpty() && !numeroManche.getText().isEmpty()) {
-            Thread t = new Thread(new Emission("course : " + numeroCourse.getText() + ", manche : " + numeroManche.getText()));
-            t.setDaemon(true);
-            t.start();
-            info.setText("course : " + numeroCourse.getText() + ", manche : " + numeroManche.getText());
-            numeroCourse.setText("");
-            numeroManche.setText("");
-        }
-    }
-
-    @FXML public void sendTexteClick(){
-        if(!texte.getText().isEmpty()) {
-            Thread t = new Thread(new Emission(texte.getText().toString()));
-            t.setDaemon(true);
-            t.start();
-            info.setText(texte.getText());
-            texte.setText("");
-        }
-    }
-
     @FXML public void openFileChooser(ActionEvent event){
         FileChooser chooser = new FileChooser();
         chooser.setTitle("Choisissez une image !");
@@ -89,40 +102,20 @@ public class MainController implements Initializable, EventHandler<MouseEvent> {
             if(name.endsWith(".jpg") || name.endsWith(".png")){
                 final String fileName = fichier.toURI().toString();
                 // Creation des miniatures
-                Image image = new Image(fileName, 0, 90, true, true);
+                Image image = new Image(fileName, 100, 160, true, true);
                 ImageView imageView = new ImageView(image);
                 imageList.getChildren().add(0, imageView);
                 fileIndex.put(imageView, fileName);
                 fileOrder.add(fileName);
-                // Evenement ici car elle ne sont pasfbds dans le sceneBuilder
+                // Evenement ici car elle ne sont pas dans le sceneBuilder
                 imageView.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
             }
         }
     }
 
-    @FXML public void chuteClick(){
-        if(!ServeurApplication.getListClient().isEmpty()) {
-            start_button.setDisable(false);
-            chute_button.setDisable(true);
-            Thread t = new Thread(new Emission(CHUTE));
-            t.setDaemon(true);
-            t.start();
-        }
-    }
-
-    @FXML public void startClick(){
-        if(!ServeurApplication.getListClient().isEmpty()) {
-            start_button.setDisable(true);
-            chute_button.setDisable(false);
-            Thread t = new Thread(new Emission(START));
-            t.setDaemon(true);
-            t.start();
-        }
-    }
-
     @FXML public void exitClick(){
         if(Main.getServeurApp().isState()) {
-            Thread t = new Thread(new Emission(Main.SERVERCLOSE));
+            Thread t = new Thread(new Emission(Main.SERVERCLOSE, ADMIN_ID));
             t.setDaemon(true);
             t.start();
             Main.getServeurApp().getThreadConnexion().stop();
@@ -135,31 +128,59 @@ public class MainController implements Initializable, EventHandler<MouseEvent> {
         Platform.exit();
     }
 
+    @FXML public void aideClick(){
+        if(!aideStage.isShowing()) aideStage.show();
+    }
+    @FXML public void aproposClick(){
+        if(!aproposStage.isShowing()) aproposStage.show();
+    }
+
+    @FXML public void maskQrCodeClick(){
+        if(maskQrCode.isSelected()){
+            qrView.setVisible(false);
+        }else{
+            qrView.setVisible(true);
+        }
+    }
     /* Autres Méthodes */
     public void infoTouch(){
         if (Main.getServeurApp().isState())
-            info.setText("Serveur demarré à " + "l'adresse " + Main.getServeurApp().getServer().getInetAddress() + " \n il écoute le port : " + Main.getServeurApp().getServer().getLocalPort());
+            info.setText("Serveur demarré à " + "l'adresse " + Main.getWifiAdresse().toString().substring(1)
+                    + " il écoute le port : " + Main.getServeurApp().getServer().getLocalPort());
         else
             info.setText("Erreur lors du lancement du serveur !");
     }
 
-    public void sendImage(ActionEvent event, Image image){}
+    public void sendImage(ActionEvent event, Image image){
+        /*
+        try {
+            BufferedImage bImage = SwingFXUtils.fromFXImage(image, null);
+            ByteArrayOutputStream s = new ByteArrayOutputStream();
+            ImageIO.write(bImage, "png", s);
+            byte[] res = s.toByteArray();
+            s.close();
+            System.out.println("Image " + res);
+        }catch (Exception e){
+            e.printStackTrace();
+        }*/
+    }
 
     public static void handleMessage(Socket s, String id, String msg){
         if(msg.equals(Main.STOPCLIENT)){
             data.remove(id);
-            try {
+            listClient.remove(s);
+            try{
                 s.close();
-            } catch (IOException e) {
+            }catch (IOException e){
                 e.printStackTrace();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
             }
-            ServeurApplication.getListClient().remove(s);
         }else {
-            String msgToSend = id + " : " + msg;
-            Thread t = new Thread(new Emission(msgToSend));
+            Thread t = new Thread(new Emission(msg, id));
             t.setDaemon(true);
             t.start();
-            MainController.messageAfficher.setText(msgToSend);
+            MainController.messageAfficher.setText("Expéditeur : " + id + "\n" + " Message : " + msg);
         }
     }
 
@@ -171,11 +192,10 @@ public class MainController implements Initializable, EventHandler<MouseEvent> {
         start_button.setDisable(true);
         int width = 100;
         int height = 100;
-        final String hre = "log-pwd-"+Main.getWifiAdresse().toString().substring(1);
         BufferedImage bufferedImage = null;
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         try {
-            BitMatrix byteMatrix = qrCodeWriter.encode(hre, BarcodeFormat.QR_CODE.QR_CODE, width, height);
+            BitMatrix byteMatrix = qrCodeWriter.encode(code, BarcodeFormat.QR_CODE, width, height);
             bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
             bufferedImage.createGraphics();
             Graphics2D graphics = (Graphics2D) bufferedImage.getGraphics();
@@ -192,9 +212,39 @@ public class MainController implements Initializable, EventHandler<MouseEvent> {
         } catch (WriterException ex) {
             ex.printStackTrace();
         }
-        ImageView qrView = new ImageView();
+        qrView = new ImageView();
         qrView.setImage(SwingFXUtils.toFXImage(bufferedImage, null));
-        rVbox.getChildren().add(qrView);
+        HBox hBox = new HBox();
+        hBox.getChildren().add(qrView);
+        hBox.setAlignment(Pos.CENTER);
+        rVbox.getChildren().add(hBox);
+        /* Creation Stage */
+        try {
+            Parent aideP = FXMLLoader.load(getClass().getResource(AIDE_FXML));
+            Parent aproposP = FXMLLoader.load(getClass().getResource(APROPOS_FXML));
+            aideStage = new Stage();
+            aideStage.setScene(new Scene(aideP));
+            aideStage.getIcons().add(new Image(String.valueOf(getClass().getResource("Images/icon.png"))));
+            aproposStage = new Stage();
+            aproposStage.setScene(new Scene(aproposP));
+            aproposStage.getIcons().add(new Image(String.valueOf(getClass().getResource("Images/icon.png"))));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        /* Combo Init */
+        comboBox1.getItems().addAll(
+          Couleur.MUTIPLE,
+          Couleur.ROUGE,
+          Couleur.BLEU,
+          Couleur.JAUNE,
+          Couleur.VERT
+        );
+        comboBox1.getSelectionModel().selectFirst();
+        /* Event */
+        start_button.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
+        chute_button.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
+        course_button.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
+        texte_button.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
     }
 
     @Override public void handle(MouseEvent event) {
@@ -209,6 +259,95 @@ public class MainController implements Initializable, EventHandler<MouseEvent> {
                 fileIndex.remove((ImageView) event.getSource(),fileName);
                 imageList.getChildren().remove((ImageView) event.getSource());
             }
+        }else if(event.getSource() == course_button){
+            if(MVController.verifNumber(numeroCourse.getText()) && MVController.verifNumber(numeroManche.getText())) {
+                String msg = comboBox1.getSelectionModel().getSelectedIndex() + "course : " + numeroCourse.getText()
+                        + ", manche : " + numeroManche.getText();
+                Thread t = new Thread(new Emission(msg, ADMIN_ID));
+                t.setDaemon(true);
+                t.start();
+                info.setText(msg);
+                numeroCourse.clear();
+                numeroManche.clear();
+            }else{
+                showAlert(Alert.AlertType.INFORMATION, "Information sur le texte saisir", null, "Le texte saisir n'est pas " +
+                        "valide merci de saisir un autre texte.");
+            }
+        }else if(event.getSource() == texte_button){
+            if(MVController.verifString(texte.getText())) {
+                String msg = comboBox1.getSelectionModel().getSelectedIndex() + texte.getText();
+                Thread t = new Thread(new Emission(msg, ADMIN_ID));
+                t.setDaemon(true);
+                t.start();
+                info.setText(msg);
+                texte.clear();
+            }else{
+                showAlert(Alert.AlertType.INFORMATION, "Information sur le texte saisir", null, "Le texte saisir n'est pas " +
+                        "valide merci de saisir un autre texte.");
+            }
+        }else if(event.getSource() == chute_button){
+            if(!getListClient().isEmpty()) {
+                start_button.setDisable(false);
+                chute_button.setDisable(true);
+                info.setText(CHUTE);
+                Thread t = new Thread(new Emission(comboBox1.getSelectionModel().getSelectedIndex() + CHUTE, ADMIN_ID));
+                t.setDaemon(true);
+                t.start();
+            }else{
+                showAlert(Alert.AlertType.INFORMATION, "Information", null, "Il n'y a aucun " +
+                        "client connecté.");
+            }
+        }else if(event.getSource() == start_button){
+            if(!getListClient().isEmpty()) {
+                start_button.setDisable(true);
+                chute_button.setDisable(false);
+                info.setText(START);
+                Thread t = new Thread(new Emission(comboBox1.getSelectionModel().getSelectedIndex() + START, ADMIN_ID));
+                t.setDaemon(true);
+                t.start();
+            }else{
+                showAlert(Alert.AlertType.INFORMATION, "Information", null, "Il n'y a aucun " +
+                        "client connecté.");
+            }
         }
+    }
+
+    public void showAlert(Alert.AlertType alertType, String title, String header, String content){
+        Alert alert = new Alert(alertType);
+        Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+        stage.getIcons().add(new Image(String.valueOf(getClass().getResource("Images/icon.png"))));
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.setContentText(content);
+        alert.show();
+    }
+
+    public static boolean removeClient(String clt){
+        boolean result = false;
+        for (Map.Entry<Socket, String> s : getListClient().entrySet()) {
+            if(s.getValue().equals(clt)){
+                listClient.remove(s.getKey(), s.getValue());
+                data.remove(clt);
+                return true;
+            }
+        }
+        return result;
+    }
+
+    public static void addClient(Socket s, String id){
+        MainController.data.add(id);
+        MainController.getListClient().put(s, id);
+    }
+    public static boolean clientExist(String clt){
+        for (Map.Entry<Socket, String> s : getListClient().entrySet()) {
+            if(s.getValue().equals(clt)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static Map<Socket, String> getListClient() {
+        return listClient;
     }
 }

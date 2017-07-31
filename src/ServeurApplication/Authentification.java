@@ -38,27 +38,40 @@ public class Authentification implements Runnable {
                 // Attends l'identifiant
                 id = in.readLine();
                 if(MVController.isValid(login, pass)){
-                    out.println(Main.CONNECTED);
-                    out.flush();
-                    authentifier = true;
+                    if(Main.ID_ARDUINO.equals(id)) {
+                        if (!MainController.clientExist(id)) {
+                            out.println("0" + Main.CONNECTED);  authentifier = true;
+                        } else {
+                            out.println("0" + Main.ALREADY_EXIST);
+                        }
+                    }else{
+                        if (!MainController.clientExist(id)) {
+                            out.println(Main.CONNECTED);
+                            authentifier = true;
+                        } else {
+                            out.println(Main.ALREADY_EXIST);
+                        }
+                    }
                 } else {
-                    out.println(Main.NOT_CONNECTED);
-                    out.flush();
+                    if(Main.ID_ARDUINO.equals(id)) {
+                        out.println("0" + Main.NOT_CONNECTED);
+                    }else {
+                        out.println(Main.NOT_CONNECTED);
+                    }
                 }
+                out.flush();
             }
 
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
-                    if(ServeurApplication.clientExist(id))  {
-                        ServeurApplication.removeClient(id);
-                        MainController.data.remove(id);
+                    if(MainController.clientExist(id))  {
+                        MainController.removeClient(id);
                     }
-                    MainController.data.add(id);
-                    ServeurApplication.getListClient().put(socket, id);
+                    MainController.addClient(socket, id);
                 }
             });
-            Thread t = new Thread(new Reception(socket, in, id));
+            Thread t = new Thread(new Reception(socket, id));
             t.setDaemon(true);
             t.start();
         } catch (IOException e) {
@@ -66,4 +79,3 @@ public class Authentification implements Runnable {
         }
     }
 }
-

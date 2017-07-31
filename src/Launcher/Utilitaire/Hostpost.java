@@ -1,5 +1,6 @@
-package Launcher;
+package Launcher.Utilitaire;
 
+import Launcher.Main;
 import ServeurApplication.ServeurApplication;
 
 import java.io.BufferedReader;
@@ -12,11 +13,11 @@ public class Hostpost {
 
     public static String outputString;
 
-    public static void start(String ssid, String pass){
+    public static String start(String ssid, String pass){
         executeCommand("netsh wlan start hostednetwork");
         String activation = "The hosted network couldn't be started.";
-        int index = activation.indexOf(outputString);
-
+        //int index = activation.indexOf(outputString);
+        String result = "";
         if (!outputString.contains(activation)){
             executeCommand("netsh wlan stop hostednetwork");
             if (ssid != null && pass.length() >= 8){
@@ -24,16 +25,19 @@ public class Hostpost {
                 System.out.println("ixi");
                 executeCommand(startingCommand);
                 executeCommand("netsh wlan start hostednetwork");
+                Main.wifiState = true;
             } else {
-                // Taille minimal du mot de passe est de 8
+                result = "Taille minimal du mot de passe est de 8";
             }
         } else {
-            // Activer le peripherique WiFi
+            result = "Activer le peripherique WiFi";
         }
+        return result;
     }
 
     public static void stop(){
         executeCommand("netsh wlan stop hostednetwork");
+        Main.wifiState = false;
     }
 
     public static String executeCommand(String command) {

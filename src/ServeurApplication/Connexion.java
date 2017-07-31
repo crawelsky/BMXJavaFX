@@ -9,12 +9,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 
-public class ConnexionOk implements Runnable{
+public class Connexion implements Runnable{
 
     private ServerSocket socketserver = null;
     private Socket socket = null;
 
-    public ConnexionOk(ServerSocket s){
+    public Connexion(ServerSocket s){
         socketserver = s;
     }
 

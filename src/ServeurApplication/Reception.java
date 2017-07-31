@@ -1,17 +1,21 @@
 package ServeurApplication;
 
-/**
- * Created by didi on 22/06/17.
- */
-
 import Launcher.Main;
 import Launcher.MainController;
 import javafx.application.Platform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
 
+/**
+ *Created by Jean Delest on 24/06/2017.
+ *@author DJADJA D. Jean Delest - jeanlemirates@gmail.com
+ *@since 1.0
+ *
+ * Cette classe est appélé autant de fois qu'il y a de client qui se connecte à l'application
+ */
 
 public class Reception implements Runnable {
     private Socket socket;
@@ -19,10 +23,14 @@ public class Reception implements Runnable {
     private String message = null, id = null;
     private boolean stopClient = false;
 
-    public Reception(Socket socket, BufferedReader in, String id){
-        this.in = in;
-        this.id = id;
-        this.socket = socket;
+    public Reception(Socket s, String ident){
+        this.socket = s;
+        try {
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        id = ident;
     }
 
     public void run() {
@@ -37,15 +45,8 @@ public class Reception implements Runnable {
                     }
                 });
             } catch (Exception e) {
-                //e.printStackTrace();
+                e.printStackTrace();
             }
-        }
-        try{
-            socket.close();
-        }catch (IOException e){
-            e.printStackTrace();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
         }
     }
 }

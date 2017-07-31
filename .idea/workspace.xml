@@ -2,35 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/core_3_1_0_javadoc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/Hostpost.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/Login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/SplashController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/splashscreen.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/MainController$1.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/FxmlFile/login.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/FxmlFile/main.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/AideController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/AproposController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/FxmlFile/aide.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/FxmlFile/apropos.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/aide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/auteur.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/licence.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Launcher/Utilitaire/Property.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/prop.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/Hostpost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/Images/loginbackground.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/Login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/login.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/main.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/splashscreen.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/ConnexionOk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Launcher/Images/loginbackground.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Launcher/login.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Launcher/main.fxml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Launcher/Hostpost.java" afterPath="$PROJECT_DIR$/src/Launcher/Utilitaire/Hostpost.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Launcher/Login.css" afterPath="$PROJECT_DIR$/src/Launcher/CssFile/Login.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Launcher/splashscreen.fxml" afterPath="$PROJECT_DIR$/src/Launcher/FxmlFile/splashscreen.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/Connexion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/LoginController.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/Main.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/MainController.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/SplashController$1.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/SplashController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/SplashController.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/SplashController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Authentification$1.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Authentification$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Authentification.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Authentification.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/ConnexionOk.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/ConnexionOk.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Emission.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Emission.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/MVController.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/MVController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Reception$1.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Reception$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Reception.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/Reception.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/ServeurApplication.class" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/ServeurApplication/ServeurApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bmxOfficiel.iml" afterPath="$PROJECT_DIR$/bmxOfficiel.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/login.fxml" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/main.fxml" afterPath="$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/main.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/LoginController.java" afterPath="$PROJECT_DIR$/src/Launcher/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/Main.java" afterPath="$PROJECT_DIR$/src/Launcher/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/MainController.java" afterPath="$PROJECT_DIR$/src/Launcher/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/login.fxml" afterPath="$PROJECT_DIR$/src/Launcher/login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/main.fxml" afterPath="$PROJECT_DIR$/src/Launcher/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Launcher/SplashController.java" afterPath="$PROJECT_DIR$/src/Launcher/SplashController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServeurApplication/Authentification.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/Authentification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServeurApplication/Emission.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/Emission.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServeurApplication/MVController.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/MVController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServeurApplication/Reception.java" afterPath="$PROJECT_DIR$/src/ServeurApplication/Reception.java" />
@@ -87,58 +101,68 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Launcher/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="173" column="84" lean-forward="false" selection-start-line="173" selection-start-column="84" selection-end-line="173" selection-end-column="84" />
+            <state relative-caret-position="0">
+              <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
               <folding>
-                <element signature="e#1320#1328#0" expanded="true" />
-                <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-                <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-                <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-                <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-                <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-                <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-                <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-                <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-                <element signature="method#handle#0;class#MainController#0" expanded="false" />
+                <element signature="method#initialize#0;class#LoginController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServeurApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Connexion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Connexion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Emission.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Emission.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServeurApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnexionOk.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java">
+      <file leaf-file-name="Authentification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Authentification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplashController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Launcher/SplashController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            <state relative-caret-position="918">
+              <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -157,6 +181,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>shutdown</find>
+      <find>handle</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -181,33 +206,43 @@
         <option value="$PROJECT_DIR$/src/Launcher/FrameController.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/Communication.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/messageReceive.java" />
-        <option value="$PROJECT_DIR$/src/Launcher/main.fxml" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/ServerStop.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/BroadCastCommunication.java" />
-        <option value="$PROJECT_DIR$/src/Launcher/Login.css" />
-        <option value="$PROJECT_DIR$/src/ServeurApplication/Reception.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/EmissionToArduino.java" />
         <option value="$PROJECT_DIR$/src/ServeurApplication/ArduinoStart.java" />
-        <option value="$PROJECT_DIR$/src/ServeurApplication/Authentification.java" />
-        <option value="$PROJECT_DIR$/src/ServeurApplication/MVController.java" />
         <option value="$PROJECT_DIR$/src/Launcher/login.fxml" />
-        <option value="$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/Login.css" />
         <option value="$PROJECT_DIR$/src/Launcher/Hostpost.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/WebPage/apropos.html" />
+        <option value="$PROJECT_DIR$/src/Launcher/AproposController.java" />
+        <option value="$PROJECT_DIR$/src/ServeurApplication/MVController.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/apropos.html" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/aide.html" />
+        <option value="$PROJECT_DIR$/src/Launcher/main.fxml" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/AideController.java" />
+        <option value="$PROJECT_DIR$/src/ServeurApplication/Reception.java" />
         <option value="$PROJECT_DIR$/src/Launcher/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/ServeurApplication/Emission.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/Property.java" />
         <option value="$PROJECT_DIR$/src/Launcher/SplashController.java" />
-        <option value="$PROJECT_DIR$/src/Launcher/MainController.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/Utilitaire/Hostpost.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/Utilitaire/Property.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/auteur.html" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/AproposController.java" />
+        <option value="$PROJECT_DIR$/src/prop.properties" />
+        <option value="$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java" />
+        <option value="$PROJECT_DIR$/src/ServeurApplication/Emission.java" />
+        <option value="$PROJECT_DIR$/src/ServeurApplication/Authentification.java" />
         <option value="$PROJECT_DIR$/src/Launcher/Main.java" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/licence.html" />
+        <option value="$PROJECT_DIR$/src/Launcher/MainController.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -230,59 +265,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServeurApplication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMXJavaFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="BMXJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMXJavaFX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BMXJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMXJavaFX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BMXJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMXJavaFX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Launcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BMXJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMXJavaFX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="FxmlFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,6 +321,15 @@
       <recent name="C:\Users\JeanDelest\Desktop\IntellijProjects\BMXJavaFX\src\Launcher" />
       <recent name="C:\Users\Jean Delest\Desktop\IntelliJProjects\bmxOfficiel\src\Launcher" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Launcher.MainControllerStage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JeanDelest\Desktop\IntellijProjects\BMXJavaFX\src\Launcher\FxmlFile" />
+      <recent name="C:\Users\JeanDelest\Desktop\IntellijProjects\BMXJavaFX\src\Launcher\MainControllerStage\FxmlFile" />
+      <recent name="C:\Users\JeanDelest\Desktop\IntellijProjects\BMXJavaFX\src\Launcher\CssFile" />
+      <recent name="C:\Users\JeanDelest\Desktop\IntellijProjects\BMXJavaFX\src\Launcher\MainControllerStage" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,12 +344,108 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Launcher.Utilitaire.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Launcher.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bmxOfficiel" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -382,30 +502,6 @@
       </Profilers>
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -420,27 +516,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -489,67 +564,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Launcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Launcher.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bmxOfficiel" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -585,25 +599,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36220473" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3480315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21010248" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1669107" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -611,9 +623,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963504" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -621,7 +635,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -645,127 +659,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Authentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#changeStage#0;class#Main#0" expanded="false" />
-            <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Authentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/MVController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Reception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Launcher/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#changeStage#0;class#Main#0" expanded="false" />
             <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
+            <element signature="method#getWifiAdresse#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,15 +675,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="35" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="method#initialize#0;class#LoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java">
+    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,18 +713,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -833,9 +722,9 @@
         <state relative-caret-position="459">
           <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#changeStage#0;class#Main#0" expanded="false" />
             <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
+            <element signature="method#getWifiAdresse#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,18 +740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="72" column="56" lean-forward="false" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +748,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="method#initialize#0;class#LoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,40 +759,29 @@
         <state relative-caret-position="68">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#changeStage#0;class#Main#0" expanded="false" />
             <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
+            <element signature="method#getWifiAdresse#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/FxmlFile/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -922,177 +790,226 @@
     <entry file="file://$PROJECT_DIR$/src/Launcher/FrameController.java" />
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Communication.java" />
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/messageReceive.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/login.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/login.fxml" />
+    <entry file="file://$PROJECT_DIR$/out/production/bmxOfficiel/Launcher/main.fxml" />
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServerStop.java" />
-    <entry file="file://$PROJECT_DIR$/src/Launcher/splashscreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/EmissionToArduino.java" />
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ArduinoStart.java" />
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Reception.java">
+    <entry file="file://$PROJECT_DIR$/src/Launcher/Images/loginbackground.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/Launcher/CssFile/Login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Authentification.java">
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/FxmlFile/apropos.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/Images/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/FxmlFile/aide.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/FxmlFile/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/FxmlFile/login.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/FxmlFile/splashscreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/Utilitaire/Hostpost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/SplashController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/AideController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/auteur.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/AproposController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/aide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/Utilitaire/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/MVController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="78" lean-forward="false" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        <state relative-caret-position="125">
+          <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/Hostpost.java">
+    <entry file="file://$PROJECT_DIR$/src/prop.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Reception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Emission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Authentification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Launcher/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="99" column="53" lean-forward="false" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
           <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
+            <element signature="method#changeStage#0;class#Main#0" expanded="false" />
+            <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
+            <element signature="method#getWifiAdresse#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Launcher/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+          <folding>
+            <element signature="method#initialize#0;class#LoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1323">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="289">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/Images/loginbackground.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/Launcher/MainControllerStage/WebPage/licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="287" column="53" lean-forward="false" selection-start-line="287" selection-start-column="53" selection-end-line="287" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Launcher/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="173" column="84" lean-forward="false" selection-start-line="173" selection-start-column="84" selection-end-line="173" selection-end-column="84" />
-          <folding>
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="method#sendNumeroClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#sendTexteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#openFileChooser#0;class#MainController#0" expanded="false" />
-            <element signature="method#chuteClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#startClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#exitClick#0;class#MainController#0" expanded="false" />
-            <element signature="method#infoTouch#0;class#MainController#0" expanded="false" />
-            <element signature="method#handleMessage#0;class#MainController#0" expanded="false" />
-            <element signature="method#handle#0;class#MainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="126" column="51" lean-forward="false" selection-start-line="126" selection-start-column="51" selection-end-line="126" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#changeStage#0;class#Main#0" expanded="false" />
-            <element signature="method#getNetIp#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Launcher/SplashController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ConnexionOk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurApplication/ServeurApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
