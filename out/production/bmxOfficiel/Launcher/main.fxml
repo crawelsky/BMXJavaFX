@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+
 <StackPane fx:id="mainPane" alignment="TOP_LEFT" prefHeight="400.0" prefWidth="561.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launcher.MainController">
     <children>
       <MenuBar>
@@ -99,7 +111,6 @@
             <HBox prefHeight="23.0" prefWidth="540.0">
                <children>
                   <Label prefHeight="25.0" prefWidth="475.0" text="Logiciel réaliser par le fablab de l'université de Brest @Djadja" />
-                  <Button fx:id="deconnexion" mnemonicParsing="false" onAction="#deconnexionClick" text="Deconnexion" />
                </children>
             </HBox>
             </children>
