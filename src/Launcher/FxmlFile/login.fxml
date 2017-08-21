@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="450.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launcher.LoginController">
+   <children>
+      <BorderPane layoutX="50.0" layoutY="50.0" prefHeight="288.0" prefWidth="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label prefHeight="92.0" prefWidth="457.0" text="Lancer l'application en tant qu'administrteur pour configurer le point d'acces. Attention cette option n'est disponible que sous WINDOWS !" textAlignment="CENTER" textFill="#689f38" wrapText="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="182.0" prefWidth="430.0" BorderPane.alignment="CENTER">
+               <children>
+                  <CheckBox fx:id="wifi" mnemonicParsing="false" onAction="#manageWifi" text="Activez WIFI ( Windows uniquement )" textFill="#689f38" />
+                  <GridPane fx:id="grille" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="263.0" style="-fx-background-color: #ffffff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.0" minWidth="10.0" prefWidth="160.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="111.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="ssidText" prefHeight="25.0" prefWidth="355.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="ssidpwdText" prefHeight="25.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Wifi SSID :" textFill="#689f38" />
+                        <Label text="Wifi password :" textFill="#689f38" GridPane.rowIndex="1" />
+                        <Label fx:id="info" prefHeight="33.0" prefWidth="160.0" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="send_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#sendClick" style="-fx-background-color: #689f38;" text="Envoyer" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

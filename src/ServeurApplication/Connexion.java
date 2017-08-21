@@ -4,20 +4,17 @@ package ServeurApplication;
  * Created by didi on 22/06/17.
  */
 
-import Launcher.LoginController;
-import Launcher.Main;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 
-public class ConnexionOk implements Runnable{
+public class Connexion implements Runnable{
 
     private ServerSocket socketserver = null;
     private Socket socket = null;
 
-    public ConnexionOk(ServerSocket s){
+    public Connexion(ServerSocket s){
         socketserver = s;
     }
 
