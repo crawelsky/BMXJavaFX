@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bmxOfficiel:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bmxOfficiel_jar</output-path>
+    <root id="archive" name="bmxOfficiel.jar">
+      <element id="module-output" name="bmxOfficiel" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/core-3.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
